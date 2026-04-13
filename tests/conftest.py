@@ -9,7 +9,7 @@ def spark() -> SparkSession:
     session = (
         SparkSession.builder
         .master("local[*]")
-        .appName("acquisition-cdc-lakehouse-tests")
+        .appName("data-acquisition-cdc-lakehouse-tests")
         .getOrCreate()
     )
     yield session
