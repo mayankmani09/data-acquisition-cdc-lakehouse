@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: customer_360
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: customer_sk
+        data_type: string
+      - name: email
+        data_type: string
+      - name: country
+        data_type: string
+      - name: status
+        data_type: string
+
+  - name: daily_revenue
+    columns:
+      - name: revenue_date
+        tests: [not_null]
+      - name: total_revenue
+        tests: [not_null]
+
+  - name: order_margin
+    columns:
+      - name: source_order_id
+        tests: [not_null, unique]
