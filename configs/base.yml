@@ -1,4 +1,4 @@
-project_name: acquisition-cdc-lakehouse
+project_name: data-acquisition-cdc-lakehouse
 
 paths:
   raw_data_dir: ./data/raw_sample
