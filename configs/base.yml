@@ -1,0 +1,19 @@
+project_name: acquisition-cdc-lakehouse
+
+paths:
+  raw_data_dir: ./data/raw_sample
+  cdc_data_dir: ./data/cdc_sample
+  output_dir: ./data/output
+
+pipeline:
+  default_batch_id: batch_local_001
+  timezone: UTC
+
+sources:
+  - source_a
+  - source_b
+
+domains:
+  - customers
+  - orders
+  - payments
