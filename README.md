@@ -122,25 +122,6 @@ Examples:
 - sample Spark integration tests
 - automated validation on pull requests
 
-## Repository structure
-
-```text
-acquisition-cdc-lakehouse/
-├── README.md
-├── architecture/
-├── data/
-├── dags/
-├── dbt/
-├── src/
-├── tests/
-├── infra/
-├── notebooks/
-├── docs/
-├── .github/workflows/
-├── docker-compose.yml
-├── requirements.txt
-└── Makefile
-
 ## Quick start
 
 ```bash
