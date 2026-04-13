@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Standardized customer records from conformed Silver output
+    columns:
+      - name: customer_sk
+        tests: [not_null, unique]
+      - name: email
+        tests: [not_null]
+
+  - name: stg_orders
+    columns:
+      - name: source_order_id
+        tests: [not_null]
+
+  - name: stg_payments
+    columns:
+      - name: source_payment_id
+        tests: [not_null]
