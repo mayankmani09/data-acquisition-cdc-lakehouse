@@ -140,3 +140,11 @@ acquisition-cdc-lakehouse/
 ├── docker-compose.yml
 ├── requirements.txt
 └── Makefile
+
+## Quick start
+
+```bash
+make setup
+make generate-data
+make test
+cd dbt && dbt build --profiles-dir .
